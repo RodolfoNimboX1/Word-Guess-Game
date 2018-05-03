@@ -1,0 +1,15 @@
+#letters a{
+    background-color: goldenrod; 
+    border-radius: 5px; 
+    padding: 5px;  
+    margin: 5px;
+    cursor: pointer;
+}
+
+#letters a:hover{
+    background-color: red;
+}
+
+#letters a .d{
+    background-color: darkgray;
+}
