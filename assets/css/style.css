@@ -13,3 +13,31 @@
 #letters a .d{
     background-color: darkgray;
 }
+
+.header img{
+    border-radius: 5px; 
+    padding: 5px;  
+    margin: 5px;
+    cursor: pointer;
+    width: 8%;
+}
+
+.header img:hover {
+    background-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    #logo {
+        margin-left: 0px !important;
+        margin-right: 100% !important; 
+    }
+    .btn-danger {
+        margin-left: 0% !important;
+    }
+    .container {
+        width: 50%;
+    }
+    .header img{
+        width: 25%;
+    }
+}
