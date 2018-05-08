@@ -33,9 +33,6 @@
     <div class="header" style="text-align: center; color: white; margin-top: 2%;">
         
         <div>
-        <button type="button" class="btn btn-danger" id="reset">Reset Game</button> 
-        <br>
-        <br>   
         <button type="button" class="btn btn-danger" id="instructionsButton" onclick="myFunction()">Click here for instructions</button>
         </div>
 
@@ -116,13 +113,20 @@
         </div>
 
         <!--Insert the next word-->
-        <div id="word">
-        <p id="category" style="color: white;"></p>
+        <div>
+        <button type="button" class="btn btn-danger" id="reset">Next Word</button> 
+        <h2 id="category" style="color: white;"></h2>
         <br>
         <h1 id="hold" style="text-align: center; color: white"></h1>
         </div>
 
     </div>
+
+    <!--Wins-->
+
+    <div>
+    <h3 style="text-align: center; color: white;">Your wins: <div id="wins"></div> </h3>
+    </div>    
 
         <div id="letters" style="text-align: center; color: white;">
             <a id="a"> A </a>
@@ -153,12 +157,11 @@
             <a id="z"> Z </a>
         </div>
 
-
-    <div id="hint">
+    <div>
         <p style="color: white; margin-top: 2%; text-align: center;">Need Help? Take a hint! But have a warning: you will lose a life each time you hit the button...
         </p>
 
-        <button type="button" class="btn btn-danger" style="margin-left: 40%; margin-bottom: 5%;">Take a hint, punny human!</button>
+        <button type="button" class="btn btn-danger" style="margin-left: 40%; margin-bottom: 1%;" onclick="myHints()">Take a hint, punny human!</button>
 
         <div id="clue" style="text-align: center; color: white;"></div>
 
