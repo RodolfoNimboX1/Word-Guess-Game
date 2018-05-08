@@ -32,89 +32,91 @@
 
     <div class="header" style="text-align: center; color: white; margin-top: 2%;">
         
+        <!--Instructions-->
         <div>
         <button type="button" class="btn btn-danger" id="instructionsButton" onclick="myFunction()">Click here for instructions</button>
         </div>
 
+        <!--My Lives-->
         <div> <h1>Your lives: <div id="lives" style="text-align: center; color: white;"></div> </h1>
 
-        <a id="spider-man"> 
-            <img src="assets/images/spiderman.jpeg" class="img-fluid">
+        <a> 
+            <img src="assets/images/spiderman.jpeg" class="img-fluid" id="spider-man">
         </a>
-        <a id="captain-america"> 
-             <img src="assets/images/captain-america.jpeg" class="img-fluid">
+        <a> 
+             <img src="assets/images/captain-america.jpeg" class="img-fluid" id="captain-america">
         </a>
-        <a id="iron-man">
-            <img src="assets/images/iron-man.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/iron-man.jpeg" class="img-fluid" id="iron-man">
         </a>
-        <a id="thor">
-            <img src="assets/images/thor.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/thor.jpeg" class="img-fluid" id="thor">
         </a>
-        <a id="black-panther">
-            <img src="assets/images/black-panther.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/black-panther.jpeg" class="img-fluid" id="black-panther">
         </a>
-        <a id="dr-strange">
-            <img src="assets/images/dr-strange.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/dr-strange.jpeg" class="img-fluid" id="dr-strange">
         </a>
-        <a id="scarlett-witch">
-            <img src="assets/images/scarlett-witch.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/scarlett-witch.jpeg" class="img-fluid" id="scarlett-witch">
         </a>
-        <a id="star-lord">
-            <img src="assets/images/star-lord.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/star-lord.jpeg" class="img-fluid" id="star-lord">
         </a>
-        <a id="gamora">
-            <img src="assets/images/gamora.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/gamora.jpeg" class="img-fluid" id="gamora">
         </a>
-        <a id="loki">
-            <img src="assets/images/loki.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/loki.jpeg" class="img-fluid" id="loki">
         </a>
-        <a id="groot">
-            <img src="assets/images/groot.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/groot.jpeg" class="img-fluid" id="groot">
         </a>
-        <a id="black-widow">
-            <img src="assets/images/black-widow.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/black-widow.jpeg" class="img-fluid" id="black-widow">
         </a>
-        <a id="vision">
-            <img src="assets/images/vision.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/vision.jpeg" class="img-fluid" id="vision">
         </a>
-        <a id="winter-soldier">
-            <img src="assets/images/winter-soldier.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/winter-soldier.jpeg" class="img-fluid" id="winter-soldier">
         </a>
-        <a id="nebula">
-            <img src="assets/images/nebula.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/nebula.jpeg" class="img-fluid" id="nebula">
         </a>
-        <a id="mantis">
-            <img src="assets/images/mantis.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/mantis.jpeg" class="img-fluid" id="mantis">
         </a>
-        <a id="heimdall">
-            <img src="assets/images/heimdall.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/heimdall.jpeg" class="img-fluid" id="heimdall">
         </a>
-        <a id="drax">
-            <img src="assets/images/drax.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/drax.jpeg" class="img-fluid" id="drax">
         </a>
-        <a id="shuri">
-            <img src="assets/images/shuri.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/shuri.jpeg" class="img-fluid" id="shuri">
         </a>
-        <a id="okoye">
-            <img src="assets/images/okoye.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/okoye.jpeg" class="img-fluid" id="okoye">
         </a>
-        <a id="falcon">
-            <img src="assets/images/falcon.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/falcon.jpeg" class="img-fluid" id="falcon">
         </a>
-        <a id="war-machine">
-            <img src="assets/images/war-machine.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/war-machine.jpeg" class="img-fluid" id="war-machine">
         </a>
-        <a id="wong">
-            <img src="assets/images/wong.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/wong.jpeg" class="img-fluid" id="wong">
         </a>
-        <a id="rocket-raccon">
-            <img src="assets/images/rocket-raccoon.jpeg" class="img-fluid">
+        <a>
+            <img src="assets/images/rocket-raccoon.jpeg" class="img-fluid" id="rocket-raccon">
         </a>
         </div>
 
         <!--Insert the next word-->
         <div>
-        <button type="button" class="btn btn-danger" id="reset">Next Word</button> 
+        <button type="button" class="btn btn-danger" id="reset" onclick="myShuffle()">Next Word</button> 
         <h2 id="category" style="color: white;"></h2>
         <br>
         <h1 id="hold" style="text-align: center; color: white"></h1>
@@ -157,6 +159,7 @@
             <a id="z"> Z </a>
         </div>
 
+        <!--Hints-->
     <div>
         <p style="color: white; margin-top: 2%; text-align: center;">Need Help? Take a hint! But have a warning: you will lose a life each time you hit the button...
         </p>

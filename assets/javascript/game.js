@@ -48,10 +48,6 @@ function startGame () {
     // prints underscore to the screen
     document.querySelector("#hold").innerHTML = underScores.join(" ");
 
-    // reset
-    wrongLetter = [];
-    guessesLeft = 24;
-
     // print on HTML
     document.getElementById("lives").innerHTML = guessesLeft;
 }
@@ -68,9 +64,38 @@ function winLose () {
 // Hints
 
 function myHints () {
-    document.getElementById("clue").innerHTML = hints;
+    randHint = hints[Math.floor(Math.random() * hints.length)];
+    document.getElementById("clue").innerHTML = randHint;
 }
 
+// Next word
+
+function myShuffle () {
+    // Picks random misteryword
+    randomWord = wordBank[Math.floor(Math.random() * wordBank.length)];
+    console.log("random word = " + randomWord)
+    for (var i = 0; i < randomWord.length; i++){
+        underScores.push("_");
+    }
+    // and random category
+    randomCat = category[Math.floor(Math.random() * category.length)];
+    document.querySelector("#category").innerHTML = randomCat;
+
+    // prints underscore to the screen
+    document.querySelector("#hold").innerHTML = underScores.join(" ");
+
+    // print on HTML
+    document.getElementById("lives").innerHTML = guessesLeft;
+}
+
+function winLose () {
+    if (wins === randomWord.length) {
+        alert("You assembled an infinity stone!");
+        document.getElementById("wins").innerHTML = wins;
+    } else if (guessesLeft === 0) {
+        alert("The avengers defeated you...");
+    }
+}
 
 // Capture users input
 // =======================================================
@@ -93,6 +118,7 @@ document.onkeyup = function(event) {
     } else {
         wrongLetter.push(userGuesses);
         document.getElementById("lives").innerHTML = guessesLeft - 1;
+        guessesLeft--;
         console.log(wrongLetter);
         winLose();
     }
