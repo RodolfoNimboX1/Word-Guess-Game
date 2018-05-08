@@ -33,10 +33,13 @@
     <div class="header" style="text-align: center; color: white; margin-top: 2%;">
         
         <div>
+        <button type="button" class="btn btn-danger" id="reset">Reset Game</button> 
+        <br>
+        <br>   
         <button type="button" class="btn btn-danger" id="instructionsButton" onclick="myFunction()">Click here for instructions</button>
         </div>
 
-        <div id="lives"> <h1>Your lives</h1>
+        <div> <h1>Your lives: <div id="lives" style="text-align: center; color: white;"></div> </h1>
 
         <a id="spider-man"> 
             <img src="assets/images/spiderman.jpeg" class="img-fluid">
@@ -112,13 +115,11 @@
         </a>
         </div>
 
-        <p>
-            There are <span id="numLetters"> 0 </span> letters in this word
-        </p>
-
         <!--Insert the next word-->
         <div id="word">
-        <h1 id="word-header"></h1>
+        <p id="category" style="color: white;"></p>
+        <br>
+        <h1 id="hold" style="text-align: center; color: white"></h1>
         </div>
 
     </div>
@@ -150,37 +151,25 @@
             <a id="x"> X </a>
             <a id="y"> Y </a>
             <a id="z"> Z </a>
-
         </div>
 
 
-    <div id="hints">
+    <div id="hint">
         <p style="color: white; margin-top: 2%; text-align: center;">Need Help? Take a hint! But have a warning: you will lose a life each time you hit the button...
         </p>
 
         <button type="button" class="btn btn-danger" style="margin-left: 40%; margin-bottom: 5%;">Take a hint, punny human!</button>
 
-        <div id="hint-one"></div>
-        <div id="hint-two"></div>
-        <div id="hint-three"></div>
+        <div id="clue" style="text-align: center; color: white;"></div>
 
     </div>
 
 </div>
 
-        <!--Java Script-->
-        <script>
-                function myFunction() {
-                        alert("Welcome, mighty Thanos! The Avengers have assembled to protect the Infinity Stones. We must defeat them so you can wield the infinity gauntlet.")
-                        confirm("Are you ready?")
-                }
-       </script>
-
-<!--Bootstrap JS-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
